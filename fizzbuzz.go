@@ -1,5 +1,5 @@
 package main
 
-func fizzBuzz() {
-
+func fizzBuzz(num int) string {
+	return "1"
 }
