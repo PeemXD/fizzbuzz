@@ -47,4 +47,15 @@ func TestFizzBuzz(t *testing.T) {
 			t.Errorf("want %v but got %v\n", want, got)
 		}
 	})
+
+	t.Run("should return Buzz when given 5", func(t *testing.T) {
+		num := 5
+		want := "Buzz"
+
+		got := fizzBuzz(num)
+
+		if want != got {
+			t.Errorf("want %v but got %v\n", want, got)
+		}
+	})
 }
