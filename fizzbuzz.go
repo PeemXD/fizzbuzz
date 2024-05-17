@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func fizzBuzz(num int) string {
-	return "1"
+	return fmt.Sprintf("%v", num)
 }
