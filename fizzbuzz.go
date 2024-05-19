@@ -5,5 +5,14 @@ import (
 )
 
 func fizzBuzz(i int) string {
-	return strconv.Itoa(i)
+	return isFizz(i)
+}
+
+func isFizz(i int) string {
+	m := map[bool]string{
+		true:  "Fizz",
+		false: strconv.Itoa(i),
+	}
+
+	return m[i%3 == 0]
 }
