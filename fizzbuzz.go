@@ -11,8 +11,17 @@ func fizzBuzz(i int) string {
 func isFizz(i int) string {
 	m := map[bool]string{
 		true:  "Fizz",
-		false: strconv.Itoa(i),
+		false: isBuzz(i),
 	}
 
 	return m[i%3 == 0]
+}
+
+func isBuzz(i int) string {
+	m := map[bool]string{
+		true:  "Buzz",
+		false: strconv.Itoa(i),
+	}
+
+	return m[i%5 == 0]
 }
