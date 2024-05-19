@@ -1,7 +1,33 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
+
+func shouldReturn(want string, given int) string {
+	return fmt.Sprintf("should return %v when given %v", want, given)
+}
 
 func TestFizzBuzz(t *testing.T) {
 
+	tests := []struct {
+		given int
+		want  string
+	}{
+		{
+			given: 1,
+			want:  "1",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(shouldReturn(tt.want, tt.given), func(t *testing.T) {
+			got := fizzBuzz(tt.given)
+
+			if tt.want != got {
+				t.Errorf("want %v but got %v\n", tt.want, got)
+			}
+		})
+	}
 }

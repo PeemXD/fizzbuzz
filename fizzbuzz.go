@@ -1,5 +1,7 @@
 package main
 
-func fizzBuzz() {
+import "fmt"
 
+func fizzBuzz(i int) string {
+	return fmt.Sprintf("%v", i)
 }
