@@ -22,17 +22,8 @@ func isFizzBuzz(i int) string {
 func isFizz(i int) string {
 	m := map[bool]string{
 		true:  "Fizz",
-		false: isBuzz(i),
+		false: "Buzz",
 	}
 
 	return m[i%3 == 0]
-}
-
-func isBuzz(i int) string {
-	m := map[bool]string{
-		true:  "Buzz",
-		false: fmt.Sprintf("%v", i),
-	}
-
-	return m[i%5 == 0]
 }
