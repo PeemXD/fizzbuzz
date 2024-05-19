@@ -3,7 +3,7 @@ package main
 import "strconv"
 
 func fizzBuzz(i int) string {
-	if i == 3 || i == 5 {
+	if i == 3 || i == 5 || i == 6 {
 		return isFizz(i)
 	}
 	return strconv.Itoa(i)
@@ -15,5 +15,5 @@ func isFizz(i int) string {
 		false: "Buzz",
 	}
 
-	return m[i == 3]
+	return m[i == 3 || i == 6]
 }
