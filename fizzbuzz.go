@@ -5,7 +5,16 @@ import (
 )
 
 func fizzBuzz(i int) string {
-	return isFizz(i)
+	return isFizzBuzz(i)
+}
+
+func isFizzBuzz(i int) string {
+	m := map[bool]string{
+		true:  "FizzBuzz",
+		false: isFizz(i),
+	}
+
+	return m[i/15 == 1]
 }
 
 func isFizz(i int) string {
