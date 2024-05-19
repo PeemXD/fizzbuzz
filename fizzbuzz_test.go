@@ -38,3 +38,16 @@ func TestFizzBuzz(t *testing.T) {
 		})
 	}
 }
+
+func TestIsFizz(t *testing.T) {
+	t.Run("should return Fizz when given 3", func(t *testing.T) {
+		given := 3
+		want := "Fizz"
+
+		got := isFizz(given)
+
+		if want != got {
+			t.Errorf("want %v but got %v", want, got)
+		}
+	})
+}
