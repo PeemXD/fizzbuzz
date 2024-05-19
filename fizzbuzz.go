@@ -14,7 +14,7 @@ func isFizzBuzz(i int) string {
 		false: isFizz(i),
 	}
 
-	return m[i/15 == 1]
+	return m[i%15 == 0]
 }
 
 func isFizz(i int) string {

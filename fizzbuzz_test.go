@@ -54,6 +54,10 @@ func TestFizzBuzz(t *testing.T) {
 			given: 15,
 			want:  "FizzBuzz",
 		},
+		{
+			given: 30,
+			want:  "FizzBuzz",
+		},
 	}
 
 	for _, tt := range tests {
