@@ -48,6 +48,10 @@ func TestFizzBuzz(t *testing.T) {
 			want:  "Fizz",
 		},
 		{
+			given: 10,
+			want:  "Buzz",
+		},
+		{
 			given: 12,
 			want:  "Fizz",
 		},
