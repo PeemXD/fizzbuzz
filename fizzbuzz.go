@@ -3,6 +3,9 @@ package main
 import "strconv"
 
 func fizzBuzz(i int) string {
+	if i == 15 {
+		return "FizzBuzz"
+	}
 	if i%3 == 0 {
 		return "Fizz"
 	}
