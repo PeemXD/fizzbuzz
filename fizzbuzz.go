@@ -8,7 +8,7 @@ func fizzBuzz(i int) string {
 		false: isBuzz(i),
 	}
 
-	return m[i == 3 || i == 6]
+	return m[i%3 == 0]
 }
 
 func isBuzz(i int) string {
