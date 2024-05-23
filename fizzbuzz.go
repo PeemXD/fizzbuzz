@@ -17,5 +17,5 @@ func isBuzz(i int) string {
 		false: strconv.Itoa(i),
 	}
 
-	return m[i == 5]
+	return m[i%5 == 0]
 }
