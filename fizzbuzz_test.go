@@ -56,9 +56,14 @@ func TestFizzBuzz(t *testing.T) {
 			want:  "Fizz",
 		},
 		{
-			name:  "should return Fizz when given 9",
+			name:  "should return Fizz when given 10",
 			given: 10,
 			want:  "Buzz",
+		},
+		{
+			name:  "should return Fizz when given 12",
+			given: 12,
+			want:  "Fizz",
 		},
 	}
 
