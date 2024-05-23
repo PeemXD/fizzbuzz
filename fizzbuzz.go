@@ -4,6 +4,15 @@ import "strconv"
 
 func fizzBuzz(i int) string {
 	m := map[bool]string{
+		true:  "FizzBuzz",
+		false: isFizz(i),
+	}
+
+	return m[i == 15]
+}
+
+func isFizz(i int) string {
+	m := map[bool]string{
 		true:  "Fizz",
 		false: isBuzz(i),
 	}
