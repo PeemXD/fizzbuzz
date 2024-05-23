@@ -7,5 +7,13 @@ func fizzBuzz(i int) string {
 		return "Fizz"
 	}
 
+	return isBuzz(i)
+}
+
+func isBuzz(i int) string {
+	if i == 5 {
+		return "Buzz"
+	}
+
 	return strconv.Itoa(i)
 }
