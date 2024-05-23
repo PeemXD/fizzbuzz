@@ -11,7 +11,7 @@ func fizzBuzz(i int) string {
 }
 
 func isBuzz(i int) string {
-	if i == 5 {
+	if i%5 == 0 {
 		return "Buzz"
 	}
 
