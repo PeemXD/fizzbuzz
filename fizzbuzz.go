@@ -9,8 +9,8 @@ type fb struct {
 	s int
 }
 
-func newFb() fb {
-	return fb{s: 1}
+func newFb(n int) fb {
+	return fb{s: n}
 }
 
 func (f *fb) isFizzBuzz() string {
@@ -18,6 +18,6 @@ func (f *fb) isFizzBuzz() string {
 }
 
 func fizzBuzz(n int) string {
-	fb := newFb()
+	fb := newFb(n)
 	return fb.isFizzBuzz()
 }
