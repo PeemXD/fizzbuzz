@@ -3,14 +3,14 @@ package main
 import "strconv"
 
 type fbI interface {
-	isFizzBuzz(int) string
+	isFizzBuzz() string
 }
 type fb struct {
 	s int
 }
 
-func newFb(n int) fb {
-	return fb{s: n}
+func newFb(n int) fbI {
+	return &fb{s: n}
 }
 
 func (f *fb) isFizzBuzz() string {
